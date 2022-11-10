@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class CloudCastle\Helpers\Format |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-CloudCastle.html">CloudCastle</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-CloudCastle.Helpers.html">Helpers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="CloudCastle.Helpers.Format.html">
+							Format
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-CloudCastle.Helpers.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="CloudCastle.Helpers.Format.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-CloudCastle.html">CloudCastle</a>\<a href="namespace-CloudCastle.Helpers.html">Helpers</a>\<a href="CloudCastle.Helpers.Format.html">Format</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Класс Format</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Format.html#15" title="Go to source code">Format.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="date" id="_date">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Format.html#18-30" title="Go to source code">date</a>(<span>string|null <var>$date</var> = <span class="php-kw">null</span></span>, <span>string <var>$format</var> = <span class="php-str">'d.m.Y'</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Преобразовать дату к необходимому формату
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Преобразовать дату к необходимому формату</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$date</var>&nbsp;&nbsp;</td>
+										<td><p>Дата которую необходимо преобразовать</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$format</var>&nbsp;&nbsp;</td>
+										<td><p>Формат к которому необходимо привести дату</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Строка даты приведенная к необходимому формату</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_date">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="phone" id="_phone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Format.html#32-47" title="Go to source code">phone</a>(<span>string <var>$number</var></span>, <span>string <var>$regexp</var> = <span class="php-str">'+7 ($2) $3-$4-$5'</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Приведение номера телефона к необходимому формату
+Изначально метод удаляет из строки все символы кроме цыфр и разбивает…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Приведение номера телефона к необходимому формату
+Изначально метод удаляет из строки все символы кроме цыфр и разбивает ее на
+5 груп в $regexp группы можно использовать как переменные с номером группы.
+В первую группу входит 1 цыфра, вторую и третью 3 цыфры и в последующие (3,4,5)
+по 2 цыфры</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$number</var>&nbsp;&nbsp;</td>
+										<td><p>Номер телефона</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$regexp</var>&nbsp;&nbsp;</td>
+										<td><p>Формат к которому необходимо привести.
+По умолчанию +7 (234) 567-89-01</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Номер телефона в виде строки приведенный к необходимому формату</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_phone">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.3</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

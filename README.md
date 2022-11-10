@@ -1,2 +1,3 @@
-# CloudCastle-XmlGenerator
 # CloudCastle-Helpers
+
+Библиотека вспомогательных классов

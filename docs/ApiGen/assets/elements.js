@@ -1,0 +1,1 @@
+window.ApiGen?.resolveElements({"namespace":[["CloudCastle","namespace-CloudCastle.html"],["CloudCastle\\Helpers","namespace-CloudCastle.Helpers.html"],["","namespace-none.html"]],"classLike":[["CloudCastle\\Helpers\\Format","CloudCastle.Helpers.Format.html",{"method":[["date","_date"],["phone","_phone"]]}]]})
